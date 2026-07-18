@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!--NAVBAR-->
+    <nav>
+        <div class="left">
+            <a href="/">Siri Doe</a>
+        </div>
+        <div class="right">
+            <a href="http://github.com" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+            <a href="http://linkedin.com" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-square-linkedin"></i>
+                <span>Linkedin</span>
+            </a>
+
+            <a href="http://email.com" target="_blank">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+             </a>
+        </div>
+    </nav>
+
+    <main>
+        <!--SECTION1 HERO-->
+        <section class="hero-section">
+            <div class="text">
+                <h2>Hi, I'm Siri 👋</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae sunt perferendis, praesentium temporibus accusantium odio excepturi, doloremque ad minus animi voluptate incidunt? Omnis molestias laboriosam minima provident temporibus adipisci quis velit. Eligendi ad consequatur ipsum, magnam quibusdam earum quae molestiae voluptatum, deleniti cum perspiciatis ratione reiciendis, nostrum qui aut distinctio.</p>
+
+                <div class="links">
+                    <a href="#skills">
+                    <i class="fa-solid fa-code"></i>
+                    <span>Skills</span>
+                    </a>
+
+                      <a href="#testimony">
+                    <i class="fa-solid fa-pen"></i>
+                    <span>Contact</span>
+                    </a>
+
+                     <a href="#contact">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Contact</span>
+                    </a>
+
+                </div>
+            </div>
+            <div class="headshot">
+                <img src="pic1.jpg" alt="img">
+            </div>
+        </section>
+
+        <!--SECTION 2 - SKILLS-->
+        <section id="skills" class="skills-section">
+            <h2>Skills</h2>
+            <div class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto tempore suscipit nisi est explicabo, a aliquid, dolorum molestiae ullam tenetur perferendis quae? Accusantium aliquid magni iste tempore qui velit quaerat.
+            </div>
+            <div class="cells">
+                <div class="cell">
+                    <img src="html.png" alt="html logo">
+                    <span>HTML</span>
+                </div>
+
+                <div class="cell">
+                    <img src="css.png" alt="css logo">
+                    <span>CSS</span>
+                </div>
+   
+                <div class="cell">
+                    <img src="js.png" alt="js logo">
+                    <span>JavaScript</span>
+                </div>
+   
+                <div class="cell">
+                    <img src="node-js.png" alt="node-js logo">
+                    <span>Node-js</span>
+                </div>
+   
+                <div class="cell">
+                    <img src="react.png" alt="react logo">
+                    <span>React.js</span>
+                </div>
+   
+            </div>
+        </section>
+
+         <!--SECTION 3 - TESTIMONY-->
+        <section id="Testimony" class="testimony-section">
+            <h2>Testimony</h2>
+            <div class="group">
+                <div class="person-detail">
+                    <img src="pic2.jpg" alt="ria img">
+                    <p>Ria Kim</p>
+                    <p>Lorem ipsum dolor sit.</p>
+                </div>
+                <div class="text">
+                    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt possimus quam eaque autem quae harum ipsam, nulla amet, accusamus, adipisci non? Inventore beatae sed, ipsum a quos incidunt? Itaque velit numquam corporis earum dolorum quidem ipsum ipsam recusandae voluptas rerum delectus est deserunt, corrupti ratione maxime tenetur aliquid ab sequi."</div>
+            </div>
+        </section>
+
+        <!--SECTION 4 -CONTACT-->
+        <section id="contact" class="contact-section">
+            <h2>Contact</h2>
+
+            <div class="group">
+                <div class="text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum sunt deserunt asperiores! Voluptates quo facere neque maxime, voluptas soluta sapiente natus doloremque! Magni repellat natus omnis eligendi voluptatem expedita officia maiores dolorum inventore perspiciatis assumenda dignissimos illo magnam vel adipisci autem fuga, temporibus impedit quidem! Voluptatibus, corrupti. Quae, eum illo!
+                </div>
+                <form>
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email">
+
+                    <label for="message">Message</label>
+                    <textarea id="message" cols="30" rows="10"></textarea>
+            
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
