@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    margin: 0 auto;
+    height: 1000px;
+}
+.container .left{
+    height:1000px;
+    background-color: navy;
+    font-size: 22px;
+}
+
+.container .right{
+    height: 1000px;
+    background-color: whitesmoke;
+    font-size: 25px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: .75fr 3fr ;
+}
+
+.container .left .first .profile img{
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2.5px solid white;
+   transition: .1s ; 
+}
+
+.container .left .first .profile img:hover{
+    border: 4px solid black;
+
+}
+
+.container .left .first .profile{
+    margin: 20px 50px;
+}
+
+.container .left .first h2{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.container .left .first .para{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.container .left .first{
+    margin-bottom: 20px 0;
+}
+
+.container .left .second{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.container .left .second h3{
+    margin-bottom: 10px;
+    text-decoration:underline;
+}
+
+
+.container .left .third{
+    text-align: center;
+    margin-bottom: 25px 0;
+}
+
+.container .left .third h3{
+    text-decoration: underline;
+    margin: 10px 0;
+}
+
+.container .left .four{
+    text-align: center;
+    margin-bottom: 20px 0;
+}
+
+.container .left .four h3{
+    text-decoration: underline;
+    margin: 10px 0;
+}
+
+.container .right{
+    color: black;
+    padding: 0 20px;
+}
+
+.container .right .title h1{
+    font-size: 4.5rem;
+    gap: 5px;
+    margin-left: 45px;
+
+}
+
+.container .right .title span{
+    color: rgb(90, 88, 88);
+    font-weight: 200;
+}
+
+.container .right .title .parag{
+    font-size: 28px;
+    margin-left: 45px
+
+}
+
+.container .right .title{
+   margin-bottom: 50px;
+}
+
+.container .right .profile{
+    margin-left: 20px;
+    margin-bottom: 33px;
+}
+
+.container .right .profile p{
+    font-size: 20px;
+}
+
+.container .right .experience{
+    font-size: 20px;
+    margin-left:20px ;
+    margin-bottom: 25px;
+}
+
+.container .right .reference .last{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    gap: 15rem;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.container .right .reference h3{
+    margin-left: 20px;
+
+}
+
+
+
+
+
+
+
+
+
