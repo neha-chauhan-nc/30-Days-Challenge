@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(backg.jpg);
+    background-size: 100% 100%;
+    position: relative;
+    gap: 150px;
+}
+
+/*page seems like glass page*/
+.bg{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;/*absolute , so make parent element"body" relative position */
+    background-color: rgba(0,0,0,0.268);/* make a div with low opacity on body to reduce the brightness of page*/
+    z-index: 2;/*iska kaam z-index, baakio ki jyada z-index, taaki baaki saare iske upar aane lag jaye */
+
+}
+
+h1{
+position: absolute;
+top: 40px;
+font-size: 50px;
+color: #061e31;
+z-index: 3;
+text-shadow: 2px 2px 10px #5595ca;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.drag{
+    position: relative;
+    width: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    cursor: grab;/*to drag, use grab*/
+    z-index: 3;
+}
+
+.dragbox{
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #061e3150;/*dec. opacity*/
+    box-shadow: 2px 2px 10px #061e31 , -2px -2px 10px #63CCCA;
+
+}
+
+.images{
+    position: absolute;
+    width: 100%;/*100% of parent element(.dragbox) */
+    height: 100%;
+    background: var(--img);
+    background-size: cover;
+}
+
+
+.drop{
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);/*divide in 3 columns */
+    gap: 5px;
+    box-shadow: 2px 2px 10px #061e31, -2px -2px 10px #63CCCA;
+    z-index: 3;
+}
+
+/*position:absolut:- box ek ke upar ek */
+.dropbox{
+    width: 140px;
+    height: 140px;
+    position: relative;/*all box inside drop */
+    background-color: #061e3199;
+    box-shadow: 2px 2px 10px #061e31, -2px -2px 10px #63CCCA;
+
+
+}
+
+#reset{
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 400px;
+    transform: translateX(-50%);
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background-color: #63CCCA;
+    color: black;
+    z-index: 3;
+    font-size: 17px;
+    font-weight: 500;
+    box-shadow:2px 2px 10px #061e31 ;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#reset:hover{
+    background-color: #061e31b5;
+    color: aliceblue;
+
+}
