@@ -103,7 +103,8 @@ position: absolute;
 content: '';/*empty content*/
 width: 29px;
 height: 29px;
-background-image: url("circle.png");
+background-image: url("circle2.png");
+appearance: none;
 background-size: cover;
 left: 15px;
 background-position: center;/*circle in bg-center*/
@@ -117,7 +118,7 @@ background-color: rgb(80, 235, 114);
 }
 
 .checked::before{
-    background-image: url("checked.png");
+    background-image: url("checkmark.png");
     width: 25px;
     height: 25px;
 }
